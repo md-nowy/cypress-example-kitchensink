@@ -26,5 +26,9 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
         with:
+        # Do I need it if i'm not using server
+          build: npm run build 
+          start: npm start
+#         browser: chrome
           spec: cypress/integration/1-getting-started/*
 #           command: npm run cypress:run
