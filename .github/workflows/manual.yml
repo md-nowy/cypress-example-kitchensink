@@ -32,3 +32,9 @@ jobs:
 #         browser: chrome
           spec: cypress/integration/1-getting-started/*
 #           command: npm run cypress:run
+      - name: Archive artifacts
+#         if: failure()
+        uses: actions/upload-artifact@v2.2.4
+        with:
+          name: artifacts
+          path: cypress/videos
