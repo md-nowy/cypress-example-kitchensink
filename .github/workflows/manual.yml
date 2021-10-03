@@ -38,3 +38,4 @@ jobs:
         with:
           name: artifacts
           path: cypress/videos
+          retention-days: 14
