@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Cypress Tests
+name: Cypress Manual Trigger
 
 # Controls when the workflow will run
 on:
@@ -26,5 +26,5 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
         with:
-          spec: cypress/integration/*
+          spec: cypress/integration/1-getting-started/*
 #           command: npm run cypress:run
